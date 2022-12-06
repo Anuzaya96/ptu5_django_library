@@ -1,0 +1,279 @@
+body {
+    background-color: #cef;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+
+}
+
+header, main, footer {
+    min-width: fit-content;
+}
+
+header {
+    background-color:  #445;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+header .container span {
+    align-self: center;
+    color: #ccc;
+    padding: 0.5rem;
+}
+
+header a {
+    display: inline-block;
+    color: #cef;
+    padding: 0.5rem;
+    text-decoration: none;
+
+}
+
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    flex-grow: 1;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 1200px;
+    min-width: 480px;
+    margin: 0 auto;
+    
+}
+
+h1, h2, h3, p {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem  0;
+}
+
+h1, h2, h3 {
+    background-color: #fff;
+    border-bottom: 3px solid #236;
+}
+
+footer {
+    background-color: #abd;
+}
+
+footer .container {
+    display: flex;
+    align-content: stretch;
+}
+
+.genre_filter .current {
+    background-color: #aac;
+}
+.genre_filter {
+    float: right;
+    background-color: #aac;
+}
+
+ul {
+    list-style: none;
+    padding: 0.5rem 1rem;
+}
+
+ul li {
+    padding: 0.2rem 1rem;
+}
+
+ul li a{
+    color: #236;
+}
+
+ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2)
+}
+
+.paginator {
+    margin: 0.5rem 0.8rem;
+}
+
+.paginator a, .paginator span {
+    display: inline-block;
+    padding: 0.3rem;
+    margin: 1px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+
+.paginator span {
+    background-color: #236;
+    color: #aac;
+}
+
+.paginator a {
+    background-color: #fff;
+}
+
+.paginator form {
+    display: inline-block;
+}
+
+
+ul.book_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+ul li.book {
+    flex-basis: 15rem;
+    border: 1px solid #999;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0;
+}
+
+ul li.book img {
+    max-width: 100%;
+}
+
+ul.book_list li.book h3 {
+    margin-top: 0;
+}
+
+table {
+    margin: 0.5rem 1rem;
+}
+
+.form-error {
+    border: 3xp solid rgb(79, 31, 31);
+    background-color: rgb(183, 123, 12);
+
+}
+
+.table-grid {
+    display: grid;
+    padding: 0.5rem;
+}
+
+.form-grid {
+    grid-template-columns: 10rem auto;
+}
+
+.form-grid div {
+    display: inline-block;
+    padding: 0.5rem;
+    align-self: center;
+    justify-self: stretch;
+}
+
+.form-grid input {
+    width: 15%;
+}
+
+.form-grid input[type="text"],
+.form-grid input[type="email"],
+.form-grid input[type="password"] {
+    width: 90%;
+}
+
+
+.my-books-table {
+    grid-template-columns: 3fr 1fr 1fr;
+}
+
+.table-grid-cell {
+    display: inline-block;
+    align-self: stretch;
+    background-color: #fff;
+    justify-self: stretch;
+    padding: 0.5rem;
+    border-bottom: 1px solid #999;
+}
+
+.center {
+    text-align: center;
+}
+
+.dark {
+    background-color: #569;
+    color: #eee;
+}
+
+.overdue {
+    background-color: #f99;
+    color: #900;
+    font-weight: bold;
+}
+.alert {
+    padding: 0.5rem 1rem;
+    border: 3px solid #999;
+}
+.alert-error {
+    background-color: #f99;
+    color: #900;
+    border-color: #900;
+}
+.alert-success {
+    background-color: #afa;
+    color: #070;
+    border-color: #070;
+}
+.float-right {
+    float: right;
+}
+
+.book-review h4 {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+.book-review h4 img {
+    max-height: 1.5rem;
+    float: left;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.review-form label {
+    display: none;
+}
+.review-form label{
+    background-color: rgba(255, 204, 168, 0.3);
+    border-bottom: 3px solid #ccc;
+}
+
+.user-profile-photo {
+    max-width: 20rem;
+    border-radius: 5rem;
+}
+
+.flex-profile {
+    display: flex;
+    place-items: stretch stretch;
+}
+
+.button {
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #999;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.button:hover {
+    background: #ddd;
+}
+
+.my-books-table {
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+}
